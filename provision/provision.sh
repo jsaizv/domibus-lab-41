@@ -4,10 +4,10 @@ sudo mkdir /servicio
 sudo cp -p /etc/sudoers /etc/sudoers.orig && sudo cp /provision/sudoers /etc/sudoers
 sudo su - pnr
 cd /servicio 
-sudo wget -q --no-check-certificate https://ec.europa.eu/cefdigital/artifact/content/repositories/public/eu/domibus/domibus-distribution/4.1.2/domibus-distribution-4.1.2-tomcat-full.zip -P /servicio
-unzip domibus-distribution-4.1.2-tomcat-full.zip
-mv domibus domibus-4.1.2
-ln -s domibus-4.1.2 domibus
+sudo wget -q --no-check-certificate https://ec.europa.eu/cefdigital/artifact/content/repositories/public/eu/domibus/domibus-distribution/4.1.3/domibus-distribution-4.1.3-tomcat-full.zip -P /servicio
+unzip domibus-distribution-4.1.3-tomcat-full.zip
+mv domibus domibus-4.1.3
+ln -s domibus-4.1.3 domibus
 sudo dnf install -y mysql
 cd /provision
 sudo dnf install -y jre-8u241-linux-x64.rpm mysql-connector-java-8.0.17-1.el8.noarch.rpm mysql-server
